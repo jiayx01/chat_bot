@@ -11,7 +11,7 @@ bot = Bot()
 # 初始化 Azure OpenAI 客户端
 client = AzureOpenAI(
     azure_endpoint="https://onewo-sweden-central.openai.azure.com",
-    api_key="1ecfcb8dd77c47368bd8f971ab166481",
+    api_key="",
     api_version="2024-02-01"
 )
 
@@ -37,7 +37,7 @@ def get_city_code(arguments: dict) -> str:
 
 def get_weather(arguments: dict) -> str:
     response = requests.get("https://restapi.amap.com/v3/weather/weatherInfo",
-                            params={"key": "dfd742fab8c930223244b5a9a916768e",
+                            params={"key": "",
                                     "city": arguments["adcode"]})
     return response.text
 
