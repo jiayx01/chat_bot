@@ -8,7 +8,7 @@
 
 ```bash
 git clone https://github.com/jiayx01/chat_bot.git
-cd wechat-bot
+cd chat-bot
 ```
 
 
